@@ -1,0 +1,10 @@
+{% extends 'layout.html' %} {% block title %}Dashboard{% endblock %} {% block
+content %}
+<div class="text-center">
+  <div class="card shadow p-4">
+    <h2>Welcome, {{ email }}</h2>
+    <p>You are successfully logged in and your email is verified.</p>
+    <a href="{{ url_for('logout') }}" class="btn btn-danger mt-3">Logout</a>
+  </div>
+</div>
+{% endblock %}
